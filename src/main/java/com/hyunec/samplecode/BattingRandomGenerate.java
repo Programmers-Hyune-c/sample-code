@@ -7,7 +7,7 @@ import java.util.Random;
 @Component
 public class BattingRandomGenerate implements RandomGenerate {
 
-    private static final int BATTING_CASE_COUNT = 2;
+    private static final int BATTING_CASE_COUNT = 3;
 
     private final Random random = new Random();
 
