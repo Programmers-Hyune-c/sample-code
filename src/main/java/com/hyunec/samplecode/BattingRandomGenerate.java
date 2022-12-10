@@ -9,10 +9,10 @@ public class BattingRandomGenerate implements RandomGenerate {
 
     private static final int BATTING_CASE_COUNT = 3;
 
-    private final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
     @Override
     public Batting generate() {
-        return Batting.getByValue(random.nextInt(BATTING_CASE_COUNT));
+        return Batting.getByValue(RANDOM.nextInt(BATTING_CASE_COUNT));
     }
 }
