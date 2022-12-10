@@ -15,11 +15,11 @@ public class BattingRandomGenerate implements RandomGenerate {
     public Batting generate() {
         final int randomValue = random.nextInt(BATTING_CASE_COUNT);
 
-        if (Batting.STRIKE.ordinal() == randomValue) {
+        if (Batting.STRIKE.getValue() == randomValue) {
             return Batting.STRIKE;
         }
 
-        if (Batting.BALL.ordinal() == randomValue) {
+        if (Batting.BALL.getValue() == randomValue) {
             return Batting.BALL;
         }
 
