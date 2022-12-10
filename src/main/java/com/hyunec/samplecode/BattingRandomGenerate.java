@@ -13,16 +13,6 @@ public class BattingRandomGenerate implements RandomGenerate {
 
     @Override
     public Batting generate() {
-        final int randomValue = random.nextInt(BATTING_CASE_COUNT);
-
-        if (Batting.STRIKE.getValue() == randomValue) {
-            return Batting.STRIKE;
-        }
-
-        if (Batting.BALL.getValue() == randomValue) {
-            return Batting.BALL;
-        }
-
-        return Batting.STRIKE;
+        return Batting.getByValue(random.nextInt(BATTING_CASE_COUNT));
     }
 }
